@@ -2,8 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import streamlit as st
 import warnings
 warnings.filterwarnings('ignore')
+
+st.title("Grafik Data Pariwisata Indonesia")
 
 # Set style untuk visualisasi
 plt.style.use('seaborn-v0_8-darkgrid')
@@ -79,3 +82,4 @@ for idx in range(len(pulau_counts), len(axes)):
 plt.suptitle('Distribusi 5 Kategori Wisata Terbanyak per Pulau', fontsize=16, fontweight='bold', y=1.02)
 plt.tight_layout()
 plt.show()
+st.pyplot(fig)
