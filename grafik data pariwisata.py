@@ -81,5 +81,7 @@ for idx in range(len(pulau_counts), len(axes)):
 
 plt.suptitle('Distribusi 5 Kategori Wisata Terbanyak per Pulau', fontsize=16, fontweight='bold', y=1.02)
 plt.tight_layout()
+plt.savefig("grafik_pariwisata.png", dpi=150, bbox_inches="tight")
+plt.close()
 plt.show()
 st.pyplot(fig)
